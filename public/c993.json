@@ -1,0 +1,200 @@
+[
+    {
+       "q": "Identify the connection between an ERD and a Relational Database. Choose 3",
+       "c": [
+          "The ERD is a logical model of an existing business",
+          "The entities in an ERD are the 'things' that form the basis of a business information system and that are transformed into tables in a database.",
+          "The relational database is another name for the logical model in which actual data can be housed and processed in support of the business process.",
+          "The ERD is a physical model of an existing business",
+          "The relational database is the physical model in which actual data can be housed and processed in support of the business process.",
+          "Entities and Attributes mean the same thing in an ERD."
+       ],
+       "a": [
+        "The ERD is a logical model of an existing business",
+        "The entities in an ERD are the 'things' that form the basis of a business information system and that are transformed into tables in a database.",
+        "The relational database is the physical model in which actual data can be housed and processed in support of the business process."
+       ],
+       "e": "test explanation"
+    },
+    {
+        "q": "Explain the Relationship Between a Database and SQL. Choose 3",
+        "c":[
+            "A database is a persistent store of information that continues—or persists—beyond the execution of a given application.",
+            "SQL is the most widely used language for interacting with a database.",
+            "SQL is the second most widely used language for interacting with a database.",
+            "SQL statements can be issued by any one or more applications to a single database.",
+            "SQL statements can not be issued by any one or more applications to a single database."
+        ],
+        "a":[
+            "A database is a persistent store of information that continues—or persists—beyond the execution of a given application.",
+            "SQL is the most widely used language for interacting with a database.",
+            "SQL statements can be issued by any one or more applications to a single database."
+        ],
+        "e": "test explanation"
+    
+    },
+    {
+        "q": "What are the purposes of DDL statements? Choose 3",
+        "c":[
+            "DDL statements include CREATE, ALTER, RENAME, TRUNCATE, COMMENT, and DROP.",
+            "DDL statements include CREATE, ALTER, RENAME, TRUNCATE, COMMENT, and DELETE.",
+            "DDL statements include SELECT, UPDATE, and INSERT",
+            "DDL statements do not always result an implicit commit",
+            "DDL statements always result in an implicit commit",
+            "DDL statements are a subset of SQL and are used to create new database objects or alter the structure of existing database objects, including removing them."
+        ],
+        "a":[
+            "DDL statements include CREATE, ALTER, RENAME, TRUNCATE, COMMENT, and DROP.",
+            "DDL statements are a subset of SQL and are used to create new database objects or alter the structure of existing database objects, including removing them.",
+            "DDL statements always result in an implicit commit"
+        ],
+        "e": "test explanation"
+     
+    },
+    {
+        "q": "What are the purposes of DML statements? Choose 2. ",
+        "c":[
+            "DML statements include SELECT, UPDATE, INSERT, TRUNCATE, and MERGE",
+            "DML statements include INSERT, UPDATE, DELETE, SELECT, and MERGE.",
+            "DML statements include SELECT, UPDATE, INSERT and DROP.",
+            "DML statements are a subset of SQL and are used to work with existing databse objects."
+        ],
+        "a":[
+            "DML statements include INSERT, UPDATE, DELETE, SELECT, and MERGE.",
+            "DML statements are a subset of SQL and are used to work with existing databse objects."
+        ],
+        "e": "test explanation"
+    },
+    {
+        "q": "What are the purposes of DCL statements?",
+        "c":[
+            "DCL includes commands such as GRANT and REVOKE which mainly deals with the rights, permissions and other controls of the database system.",
+            "DCL statements include INSERT, UPDATE, DELETE, SELECT, and MERGE.",
+            "DCL statements include SELECT, UPDATE, INSERT and DROP.",
+            "DCL statements are a subset of SQL and are used to work with manipulating databse objects.",
+            "DCL statements always result in an implicit commit"
+        ],
+        "a":[
+            "DCL includes commands such as GRANT and REVOKE which mainly deals with the rights, permissions and other controls of the database system."
+        ],
+        "e": "test explanation"
+    },
+    {
+        "q": "What are the purposes of TCL statements? Choose 2.",
+        "c":[
+            "TCL commands deals with the transaction within the database.",
+            "TCL statements include INSERT, UPDATE, DELETE, SELECT, and MERGE.",
+            "TCL statements include COMMIT, ROLLBACK, SAVEPOINT and TRUNCATE.",
+            "TCL statements include COMMIT, ROLLBACK, SAVEPOINT and SET TRANSACTION.",
+            "TCL statements always result in an implicit commit"
+        ],
+        "a":[
+            "TCL commands deals with the transaction within the database.",
+            "TCL statements include COMMIT, ROLLBACK, SAVEPOINT and SET TRANSACTION."
+        ],
+        "e": "test explanation"
+    },
+    {
+        "q": "How can the SELECT statement be built to retrieve data from an Oracle Database Table? Choose 3.",
+        "c":[
+            "The SELECT statement causes an implicit commit.",
+            "SELECT statements can be used to alter a table's sturcture.",
+            "SELECT can be used with functions and other capabilities to transform data in various ways.",
+            "SELECT can be used to query data from a single table or join data together in two or more tables to return data that is logically connected.",
+            "The SELECT statement is the most commonly used SQL statement."
+        ],
+        "a":[
+            "The SELECT statement is the most commonly used SQL statement.",
+            "SELECT can be used to query data from a single table or join data together in two or more tables to return data that is logically connected.",
+            "SELECT can be used with functions and other capabilities to transform data in various ways."
+        ],
+        "e": "test explanation"
+    },
+    {
+        "q": "which statements will fail due to naming rule violations? Choose 4",
+        "c":[
+            "CREATE TABLE \"#hard_test\" (question_1 varchar(100), question_2 varchar(100), answer_1 varchar(100), answer_2 varchar(100));",
+            "CREATE TABLE #hard_test (question_1 varchar(100), question_2 varchar(100),  answer_1 varchar(100), answer_2 varchar(100));",
+            "CREATE TABLE hard_test (question-one varchar(100), question-two varchar(100),  answer_1 varchar(100), answer_2 varchar(100));",
+            "ALTER TABLE ADD (_question_3 char, _answer_4 char);",
+            "ALTER TABLE ADD (question_3_ char, answer_4_ char);",
+            "ALTER TABLE ADD (create datetime);"
+        ],
+        "a":[
+            "CREATE TABLE #hard_test (question_1 varchar(100), question_2 varchar(100), answer varchar(100));",
+            "CREATE TABLE hard_test (question-one varchar(100), question-two varchar(100), answer varchar(100));",
+            "ALTER TABLE ADD (#question_3 char, #answer_4 char);",
+            "ALTER TABLE ADD (create datetime);"
+        ],
+        "e": "test explanation"
+    },
+    {
+        "q": "Which statements will fail due to naming rule violations? Choose 4",
+        "c":[
+            "CREATE TABLE \"#hard_test\" (question_1 varchar(100), question_2 varchar(100), answer_1 varchar(100), answer_2 varchar(100));",
+            "CREATE TABLE #hard_test (question_1 varchar(100), question_2 varchar(100),  answer_1 varchar(100), answer_2 varchar(100));",
+            "CREATE TABLE hard_test (question-one varchar(100), question-two varchar(100),  answer_1 varchar(100), answer_2 varchar(100));",
+            "ALTER TABLE ADD (_question_3 char, _answer_4 char);",
+            "ALTER TABLE ADD (question_3_ char, answer_4_ char);",
+            "ALTER TABLE ADD (create datetime);"
+        ],
+        "a":[
+            "CREATE TABLE #hard_test (question_1 varchar(100), question_2 varchar(100), answer varchar(100));",
+            "CREATE TABLE hard_test (question-one varchar(100), question-two varchar(100), answer varchar(100));",
+            "ALTER TABLE ADD (#question_3 char, #answer_4 char);",
+            "ALTER TABLE ADD (create datetime);"
+        ],
+        "e": "test explanation"
+    },
+    {
+        "q": "The synta for the CREATE obectType statement is shown in this code listing: CREATE objectType objectName attributes; Select all the valid CREATE TABLE statements below. Choose 2",
+        "c":[
+            "CREATE TABLE work_schedule \n (work_schedule_id 0NUMBER, \n start_date DATE, \n end_date);",
+            "CREATE TABLE \"_Companies\" (company_id NUMBER primary key);",
+            "CREATE TABLE _Companies (company_id NUMBER);",
+            "CREATE TABLE table (table_id NUMBER, \n CONSTRAINT NOT NULL (table_id);",
+            "CREATE TABLE table_name (table_id NUMBER, \n table_title VARCHAR2(100), \n table_info VARCHAR2(5000));"
+        ],
+        "a":[
+            "CREATE TABLE work_schedule \n (work_schedule_id 0NUMBER, \n start_date DATE, \n end_date);",
+            "CREATE TABLE \"_Companies\" (company_id NUMBER primary key);"
+        ]
+    },
+    {
+        "q": "Understanding the namespace is necessary in order to understand whether you may or may not specify duplicate names for any particular databse. Select all the correct namespace boundary groups. Choose 4",
+        "c":[
+            "Users, Roles",
+            "Tables, Views, Sequences, Private Synonyms, User-Defined Types",
+            "Indexes",
+            "Sequences",
+            "Indexes, Sequences",
+            "Users",
+            "Roles",
+            "Schema, Database",
+            "Database",
+            "Schemas",
+            "Public Synonym"
+        ],
+        "a":[
+            "Users, Roles",
+            "Tables, Views, Sequences, Private Synonyms, User-Defined Types",
+            "Indexes",
+            "Sequences",
+            "Database",
+            "Schemas",
+            "Public Synonym"
+        ]
+    },
+    {
+        "q": "",
+        "c": [
+
+        ],
+        "a":[
+
+        ]
+    }
+
+
+
+]

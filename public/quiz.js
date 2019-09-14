@@ -5,7 +5,7 @@ let labels = {};
 var state = null;
 var content = null;
 
-const source=getParam('src') || 'c857';
+const source=getParam('src') || 'c857' || 'c993';
 const allowQuickComplete = parseInt(getParam('quick')||0);
 
 const MAX_WORKING = 10;
